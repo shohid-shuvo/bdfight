@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "fighters": {
+    "zephyr": {
+      "type": "geometric-placeholder",
+      "path": null,
+      "approved": true,
+      "shape": "rectangle",
+      "color": "#39ceb3",
+      "width": 20,
+      "height": 58
+    },
+    "bajra": {
+      "type": "geometric-placeholder",
+      "path": null,
+      "approved": true,
+      "shape": "rectangle",
+      "color": "#edac5c",
+      "width": 30,
+      "height": 70
+    }
+  }
+}

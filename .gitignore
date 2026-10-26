@@ -4,6 +4,8 @@ coverage/
 test-results/
 playwright-report/
 client/phase-0-smoke.png
+# Private design sheets are unverified and must never enter the repository.
+client/public/assets/sprites/
 .vite/
 *.log
 .env
