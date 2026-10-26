@@ -1,0 +1,40 @@
+{
+  "simulation": { "hz": 60, "subpixelsPerPixel": 100 },
+  "display": { "width": 384, "height": 224 },
+  "input": {
+    "historyFrames": 30,
+    "bufferFrames": 5,
+    "motionWindowFrames": 15,
+    "rollButtons": ["A", "B"],
+    "throwButtons": ["C", "D"],
+    "rollNeutralDirection": "forward",
+    "directionConflicts": { "leftRight": "neutral", "upDown": "up" },
+    "priority": ["throw", "roll", "super", "special", "normal", "movement"],
+    "normalPriority": ["D", "C", "B", "A"]
+  },
+  "assist": {
+    "framesPerDirection": 2,
+    "buttonFrameAfterMotion": 1,
+    "cancelOnStickDirection": true,
+    "replaceOnNewShortcut": true,
+    "dropInStates": ["hitstun", "knockdown"],
+    "defaultTouch": true,
+    "defaultDesktop": false
+  },
+  "loop": {
+    "offlineMaxStepsPerRaf": 5,
+    "onlineMaxStepsPerRafIncludingResims": 8
+  },
+  "network": {
+    "localDelayFrames": 2,
+    "maxRollbackFrames": 8,
+    "snapshotHistoryFrames": 12,
+    "checksumHistoryFrames": 600,
+    "checksumIntervalFrames": 30,
+    "maxAheadSlowdownPercent": 2,
+    "poorConnectionBehindFrames": 12,
+    "poorConnectionAfterMs": 3000,
+    "pauseAfterNoInputMs": 5000,
+    "forfeitAfterNoInputMs": 10000
+  }
+}

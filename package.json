@@ -1,0 +1,33 @@
+{
+  "name": "neon-dojo-tournament",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "workspaces": [
+    "shared",
+    "client",
+    "server",
+    "tools"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @neon-dojo/client",
+    "dev:server": "npm run dev --workspace @neon-dojo/server",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:browser": "playwright test",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "build": "npm run build --workspace @neon-dojo/client"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.58.2",
+    "eslint": "10.13.0",
+    "globals": "17.13.0",
+    "prettier": "3.9.10",
+    "vitest": "4.1.12"
+  }
+}

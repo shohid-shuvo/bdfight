@@ -1,0 +1,79 @@
+{
+  "rounds": {
+    "winsToMatch": 2,
+    "timerSeconds": 99,
+    "simultaneousStrikes": "trade",
+    "throwVsActiveStrike": "strikeWins",
+    "throwVsAttackStartup": "throwWins",
+    "doubleKo": "bothAwardedRoundPoint",
+    "doubleMatchPoint": "suddenDeathExtraRound",
+    "timeoutComparison": "hpPercentage",
+    "timeoutTie": "sameAsDoubleKo"
+  },
+  "blocking": {
+    "levels": ["high", "mid", "low", "overhead"],
+    "standing": ["high", "mid", "overhead"],
+    "crouching": ["high", "mid", "low"],
+    "airAttackLevel": "mid",
+    "airBlock": false
+  },
+  "throw": {
+    "rangeSubpixels": 6000,
+    "startupFrames": 3,
+    "invulnerabilityFrames": 0,
+    "requiresBothGrounded": true,
+    "requiresBothActionable": true,
+    "escapeButtons": ["C", "D"],
+    "escapeWindowFrames": 12,
+    "escapeResult": "pushApartWithoutDamage",
+    "forbiddenTargetStates": [
+      "hitstun",
+      "blockstun",
+      "knockdown",
+      "airborne",
+      "roll"
+    ]
+  },
+  "hitstop": {
+    "freezeRoundTimer": true,
+    "freezeAffectedProjectiles": true,
+    "freezeAffectedAnimations": true,
+    "recordInputHistory": true,
+    "ageInputBuffer": false
+  },
+  "jump": {
+    "startOnUpPress": true,
+    "shortHopReleaseWindowFrames": 3,
+    "shortHopVelocity": "reduced",
+    "superJumpMotion": ["DOWN", "UP"],
+    "superJumpWindowFrames": 8
+  },
+  "run": {
+    "trigger": "doubleTapForward",
+    "doubleTapWindowFrames": 10,
+    "dedicatedTouchButtonAllowed": true
+  },
+  "power": {
+    "max": 3000,
+    "stockSize": 1000,
+    "exCost": 500,
+    "superCost": 1000,
+    "dealtGainSource": "move.meterGain",
+    "takenGainSource": "move.damageTakenMeterGain"
+  },
+  "teamBattle": {
+    "fightersPerTeam": 3,
+    "hpPerFighter": true,
+    "replacementOrder": "selectedOrder",
+    "winnerKeepsHp": true,
+    "nextFighterHp": "full",
+    "powerPerTeam": true,
+    "powerCarriesOver": true,
+    "victory": "allOpponentsKo",
+    "boutTimerSeconds": 60,
+    "timeoutComparison": "hpPercentage",
+    "timeoutLoser": "removed",
+    "timeoutTie": "bothRemoved",
+    "doubleKo": "bothReplaced"
+  }
+}

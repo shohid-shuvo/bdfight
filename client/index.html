@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Dojo Tournament</title>
+  </head>
+  <body>
+    <main>
+      <h1 data-i18n="title"></h1>
+      <p data-i18n="setupNotice"></p>
+      <div id="game" role="img" aria-label="Renderer setup preview"></div>
+      <div class="server-check">
+        <button
+          id="check-server"
+          type="button"
+          data-i18n="checkServer"
+        ></button>
+        <output id="server-status" aria-live="polite"></output>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

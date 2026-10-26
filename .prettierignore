@@ -1,0 +1,14 @@
+node_modules/
+**/dist/
+coverage/
+test-results/
+playwright-report/
+.claude/
+package-lock.json
+# Preserve authored historical specifications and art prompts unchanged.
+docs/AGENT_PLAN.md
+docs/agent-plan.md
+docs/PRD.md
+docs/SPEC_ADDENDUM.md
+docs/folder_structure.md
+SPRITE_PROMPTS.md
