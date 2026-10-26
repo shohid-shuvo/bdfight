@@ -30,6 +30,7 @@
 - [x] 0.5 ESLint + Prettier configured; `npm run lint` passes
 - [x] 0.6 Root scripts from `CLAUDE.md` all work (`dev`, `dev:server`, `test`, `lint`, `build`)
 - [ ] 0.7 GitHub Actions CI: install, lint, test, build
+  - **BLOCKED:** No GitHub remote is configured, so the workflow cannot run remotely yet.
 - [x] 0.8 Create `docs/DECISIONS.md`, `docs/STATUS.md`, `docs/ASSET_LICENSES.md`
 - [x] 0.9 Minimal `server` that starts and serves `/health`
 - [x] 0.10 Read SPEC_ADDENDUM.md, create shared/rules.json with section F defaults
